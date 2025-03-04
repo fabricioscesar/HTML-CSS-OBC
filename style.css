@@ -63,7 +63,8 @@ a {
 .section__title {
     font-size: 3rem;
     font-weight: 300;
-    margin-top: 4rem auto;
+    margin: 4rem auto;
+
 }
 
 .section__img,
@@ -103,4 +104,34 @@ a {
 .section__text-inline > p{
     margin-top: 1.5rem;
     
+}
+
+#hangouts img {
+    object-position: center;
+}
+
+.gallery__img {
+    border-radius: .75rem;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+    transform: rotate(-2deg);
+    display: inline-block;
+    position: relative;
+}
+
+.gallery__img-wrapper + .gallery__img-wrapper {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery__img-wrapper:nth-child(even) > .gallery__img {
+    top: 1rem;
+    transform: rotate(2deg);
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
 }
